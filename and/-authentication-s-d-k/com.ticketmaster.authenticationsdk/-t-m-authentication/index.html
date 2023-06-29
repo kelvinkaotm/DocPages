@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>TMAuthentication</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>AuthenticationSDK</span>
+            </a>
+    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":AuthenticationSDK:dokkaHtml/release">androidJvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="AuthenticationSDK::com.ticketmaster.authenticationsdk/TMAuthentication///PointingToDeclaration//-2112088926">
+  <div class="breadcrumbs"><a href="../../../index.html">AuthenticationSDK</a><span class="delimiter">/</span><a href="../index.html">com.ticketmaster.authenticationsdk</a><span class="delimiter">/</span><span class="current">TMAuthentication</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>TMAuthentication</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AuthenticationSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">TMAuthentication</a></div><p class="paragraph">Perform authentication operations for Ticketmaster services, like login, logout, mfa process, obtain member details information, get a token to make authorized request to ticketmaster services.</p><p class="paragraph">Obtain an instance of this class using <a href="-builder/build.html">TMAuthentication.Builder.build</a>. You can configure <a href="index.html">TMAuthentication</a> using the available methods on the <a href="-builder/index.html">TMAuthentication.Builder</a>.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-2079250674%2FConstructors%2F-2112088926" anchor-label="TMAuthentication" id="-2079250674%2FConstructors%2F-2112088926" data-filterable-set=":AuthenticationSDK:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":AuthenticationSDK:dokkaHtml/release" data-filterable-set=":AuthenticationSDK:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-t-m-authentication.html"><span><span>TMAuthentication</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2079250674%2FConstructors%2F-2112088926"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AuthenticationSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Convenience method to build a client with default configuration</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="1384284499%2FClasslikes%2F-2112088926" anchor-label="Builder" id="1384284499%2FClasslikes%2F-2112088926" data-filterable-set=":AuthenticationSDK:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AuthenticationSDK:dokkaHtml/release" data-filterable-set=":AuthenticationSDK:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-builder/index.html"><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1384284499%2FClasslikes%2F-2112088926"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AuthenticationSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-builder/index.html">Builder</a></div><div class="brief "><p class="paragraph">Builder class to configure and create an <a href="index.html">TMAuthentication</a> instance.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-385986226%2FClasslikes%2F-2112088926" anchor-label="ColorTheme" id="-385986226%2FClasslikes%2F-2112088926" data-filterable-set=":AuthenticationSDK:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AuthenticationSDK:dokkaHtml/release" data-filterable-set=":AuthenticationSDK:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-color-theme/index.html"><span>Color</span><wbr></wbr><span><span>Theme</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-385986226%2FClasslikes%2F-2112088926"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AuthenticationSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-color-theme/index.html">ColorTheme</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>lightColors<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/material/Colors.html">Colors</a><span class="token operator"> = </span>LightColorPalette<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>darkColors<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/material/Colors.html">Colors</a><span class="token operator"> = </span>DarkColorPalette</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Holder class for light and dark theme colors.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="976885391%2FClasslikes%2F-2112088926" anchor-label="EventNameType" id="976885391%2FClasslikes%2F-2112088926" data-filterable-set=":AuthenticationSDK:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AuthenticationSDK:dokkaHtml/release" data-filterable-set=":AuthenticationSDK:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-event-name-type/index.html"><span>Event</span><wbr></wbr><span>Name</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="976885391%2FClasslikes%2F-2112088926"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AuthenticationSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-event-name-type/index.html">EventNameType</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-event-name-type/index.html">TMAuthentication.EventNameType</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-994770054%2FProperties%2F-2112088926" anchor-label="apiKey" id="-994770054%2FProperties%2F-2112088926" data-filterable-set=":AuthenticationSDK:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AuthenticationSDK:dokkaHtml/release" data-filterable-set=":AuthenticationSDK:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="api-key.html"><span>api</span><wbr></wbr><span><span>Key</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-994770054%2FProperties%2F-2112088926"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AuthenticationSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="api-key.html">apiKey</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Api key for the sdk.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1254324585%2FProperties%2F-2112088926" anchor-label="archticsMALoginParameters" id="-1254324585%2FProperties%2F-2112088926" data-filterable-set=":AuthenticationSDK:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AuthenticationSDK:dokkaHtml/release" data-filterable-set=":AuthenticationSDK:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="archtics-m-a-login-parameters.html"><span>archtics</span><wbr></wbr><span>MALogin</span><wbr></wbr><span><span>Parameters</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1254324585%2FProperties%2F-2112088926"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AuthenticationSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="archtics-m-a-login-parameters.html">archticsMALoginParameters</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Modern Accounts Archtics configuration parameters</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1307914103%2FProperties%2F-2112088926" anchor-label="clientName" id="-1307914103%2FProperties%2F-2112088926" data-filterable-set=":AuthenticationSDK:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AuthenticationSDK:dokkaHtml/release" data-filterable-set=":AuthenticationSDK:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="client-name.html"><span>client</span><wbr></wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1307914103%2FProperties%2F-2112088926"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AuthenticationSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="client-name.html">clientName</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Client name that will be shown in the quick login screen</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1740372155%2FProperties%2F-2112088926" anchor-label="configuration" id="-1740372155%2FProperties%2F-2112088926" data-filterable-set=":AuthenticationSDK:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AuthenticationSDK:dokkaHtml/release" data-filterable-set=":AuthenticationSDK:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="configuration.html"><span><span>configuration</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1740372155%2FProperties%2F-2112088926"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AuthenticationSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="configuration.html">configuration</a><span class="token operator">: </span><a href="../-t-m-apigee-config/index.html">TMApigeeConfig</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Get client configuration properties like login method, locale, flags, redirect urls, etc.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-242602936%2FProperties%2F-2112088926" anchor-label="environment" id="-242602936%2FProperties%2F-2112088926" data-filterable-set=":AuthenticationSDK:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AuthenticationSDK:dokkaHtml/release" data-filterable-set=":AuthenticationSDK:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="environment.html"><span><span>environment</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-242602936%2FProperties%2F-2112088926"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AuthenticationSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="environment.html">environment</a><span class="token operator">: </span><a href="../-t-m-x-deployment-environment/index.html">TMXDeploymentEnvironment</a></div><div class="brief "><p class="paragraph">Environment for the sdk</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1230847750%2FProperties%2F-2112088926" anchor-label="forceNewSession" id="-1230847750%2FProperties%2F-2112088926" data-filterable-set=":AuthenticationSDK:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AuthenticationSDK:dokkaHtml/release" data-filterable-set=":AuthenticationSDK:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="force-new-session.html"><span>force</span><wbr></wbr><span>New</span><wbr></wbr><span><span>Session</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1230847750%2FProperties%2F-2112088926"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AuthenticationSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="force-new-session.html">forceNewSession</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Set this to true if the logout fails and you are trying to open login again</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1400710140%2FProperties%2F-2112088926" anchor-label="hostMALoginParameters" id="-1400710140%2FProperties%2F-2112088926" data-filterable-set=":AuthenticationSDK:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AuthenticationSDK:dokkaHtml/release" data-filterable-set=":AuthenticationSDK:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="host-m-a-login-parameters.html"><span>host</span><wbr></wbr><span>MALogin</span><wbr></wbr><span><span>Parameters</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1400710140%2FProperties%2F-2112088926"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AuthenticationSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="host-m-a-login-parameters.html">hostMALoginParameters</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Modern Accounts Host configuration parameters</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="924735023%2FProperties%2F-2112088926" anchor-label="modernAccountsAutoQuickLogin" id="924735023%2FProperties%2F-2112088926" data-filterable-set=":AuthenticationSDK:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AuthenticationSDK:dokkaHtml/release" data-filterable-set=":AuthenticationSDK:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="modern-accounts-auto-quick-login.html"><span>modern</span><wbr></wbr><span>Accounts</span><wbr></wbr><span>Auto</span><wbr></wbr><span>Quick</span><wbr></wbr><span><span>Login</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="924735023%2FProperties%2F-2112088926"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AuthenticationSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="modern-accounts-auto-quick-login.html">modernAccountsAutoQuickLogin</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Set it to true if you want to skip the initial screen where you need to manually click to see the login page, false otherwise.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1428986078%2FProperties%2F-2112088926" anchor-label="modernAccountsQuickLogin" id="1428986078%2FProperties%2F-2112088926" data-filterable-set=":AuthenticationSDK:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AuthenticationSDK:dokkaHtml/release" data-filterable-set=":AuthenticationSDK:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="modern-accounts-quick-login.html"><span>modern</span><wbr></wbr><span>Accounts</span><wbr></wbr><span>Quick</span><wbr></wbr><span><span>Login</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1428986078%2FProperties%2F-2112088926"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AuthenticationSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="modern-accounts-quick-login.html">modernAccountsQuickLogin</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="796006731%2FProperties%2F-2112088926" anchor-label="region" id="796006731%2FProperties%2F-2112088926" data-filterable-set=":AuthenticationSDK:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AuthenticationSDK:dokkaHtml/release" data-filterable-set=":AuthenticationSDK:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="region.html"><span><span>region</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="796006731%2FProperties%2F-2112088926"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AuthenticationSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="region.html">region</a><span class="token operator">: </span><a href="../-t-m-x-deployment-region/index.html">TMXDeploymentRegion</a></div><div class="brief "><p class="paragraph">Region for the sdk</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="339919341%2FFunctions%2F-2112088926" anchor-label="fetchUserDetails" id="339919341%2FFunctions%2F-2112088926" data-filterable-set=":AuthenticationSDK:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AuthenticationSDK:dokkaHtml/release" data-filterable-set=":AuthenticationSDK:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="fetch-user-details.html"><span>fetch</span><wbr></wbr><span>User</span><wbr></wbr><span><span>Details</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="339919341%2FFunctions%2F-2112088926"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AuthenticationSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="fetch-user-details.html"><span class="token function">fetchUserDetails</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-either/index.html">Either</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-error/index.html">Error</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="../-t-m-member-info/index.html">TMMemberInfo</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Fetch user details for the current session that you obtained by a previous login process.</p></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="fetch-user-details.html"><span class="token function">fetchUserDetails</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fragmentActivity<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/FragmentActivity.html">FragmentActivity</a><span class="token punctuation">, </span></span><span class="parameter ">userDetailsCallback<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="../-either/index.html">Either</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-error/index.html">Error</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="../-t-m-member-info/index.html">TMMemberInfo</a><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines/Job///PointingToDeclaration/">Job</span></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="fetch-user-details.html"><span class="token function">fetchUserDetails</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">coroutineScope<span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines/CoroutineScope///PointingToDeclaration/">CoroutineScope</span><span class="token punctuation">, </span></span><span class="parameter ">userDetailsCallback<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="../-either/index.html">Either</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-error/index.html">Error</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="../-t-m-member-info/index.html">TMMemberInfo</a><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines/Job///PointingToDeclaration/">Job</span></div><div class="brief "><p class="paragraph">Fetch user details for the current session that you obtained by a previous login process. This method should be called from java. If you are using kotlin, please use fetchUserDetails()</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-487073320%2FFunctions%2F-2112088926" anchor-label="getBID" id="-487073320%2FFunctions%2F-2112088926" data-filterable-set=":AuthenticationSDK:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AuthenticationSDK:dokkaHtml/release" data-filterable-set=":AuthenticationSDK:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-b-i-d.html"><span>get</span><wbr></wbr><span><span>BID</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-487073320%2FFunctions%2F-2112088926"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AuthenticationSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-b-i-d.html"><span class="token function">getBID</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="7718872%2FFunctions%2F-2112088926" anchor-label="getDeviceVerificationToken" id="7718872%2FFunctions%2F-2112088926" data-filterable-set=":AuthenticationSDK:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AuthenticationSDK:dokkaHtml/release" data-filterable-set=":AuthenticationSDK:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-device-verification-token.html"><span>get</span><wbr></wbr><span>Device</span><wbr></wbr><span>Verification</span><wbr></wbr><span><span>Token</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="7718872%2FFunctions%2F-2112088926"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AuthenticationSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-device-verification-token.html"><span class="token function">getDeviceVerificationToken</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">memberId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-device-verification-token.html"><span class="token function">getDeviceVerificationToken</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">memberId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">fragmentActivity<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/FragmentActivity.html">FragmentActivity</a><span class="token punctuation">, </span></span><span class="parameter ">deviceVerificationTokenCallback<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines/Job///PointingToDeclaration/">Job</span></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-device-verification-token.html"><span class="token function">getDeviceVerificationToken</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">memberId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">coroutineScope<span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines/CoroutineScope///PointingToDeclaration/">CoroutineScope</span><span class="token punctuation">, </span></span><span class="parameter ">deviceVerificationTokenCallback<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines/Job///PointingToDeclaration/">Job</span></div><div class="brief "><p class="paragraph">Returns a Device Verification token previously obtained through the Multifactor Authentication process (MFA), see <a href="get-m-f-a-intent.html">getMFAIntent</a>. If this is null it means you need to prompt the MFA process to authenticate the device.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-187360491%2FFunctions%2F-2112088926" anchor-label="getLoginIntent" id="-187360491%2FFunctions%2F-2112088926" data-filterable-set=":AuthenticationSDK:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AuthenticationSDK:dokkaHtml/release" data-filterable-set=":AuthenticationSDK:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-login-intent.html"><span>get</span><wbr></wbr><span>Login</span><wbr></wbr><span><span>Intent</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-187360491%2FFunctions%2F-2112088926"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AuthenticationSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-login-intent.html"><span class="token function">getLoginIntent</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fromActivity<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/app/Activity.html">Activity</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Intent.html">Intent</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Login into ticketmaster using the returned Intent.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1186208646%2FFunctions%2F-2112088926" anchor-label="getMFAIntent" id="-1186208646%2FFunctions%2F-2112088926" data-filterable-set=":AuthenticationSDK:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AuthenticationSDK:dokkaHtml/release" data-filterable-set=":AuthenticationSDK:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-m-f-a-intent.html"><span>get</span><wbr></wbr><span><span>MFAIntent</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1186208646%2FFunctions%2F-2112088926"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AuthenticationSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-m-f-a-intent.html"><span class="token function">getMFAIntent</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">activity<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/app/Activity.html">Activity</a><span class="token punctuation">, </span></span><span class="parameter ">memberId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">fromSmartQueue<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">additionalProperties<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyMap()</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Intent.html">Intent</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Whenever you need to use Multifactor Authentication (MFA) you can call this method to receive an Intent that you can launch to handle the process.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-522627289%2FFunctions%2F-2112088926" anchor-label="getSID" id="-522627289%2FFunctions%2F-2112088926" data-filterable-set=":AuthenticationSDK:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AuthenticationSDK:dokkaHtml/release" data-filterable-set=":AuthenticationSDK:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-s-i-d.html"><span>get</span><wbr></wbr><span><span>SID</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-522627289%2FFunctions%2F-2112088926"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AuthenticationSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-s-i-d.html"><span class="token function">getSID</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1863717557%2FFunctions%2F-2112088926" anchor-label="getToken" id="-1863717557%2FFunctions%2F-2112088926" data-filterable-set=":AuthenticationSDK:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AuthenticationSDK:dokkaHtml/release" data-filterable-set=":AuthenticationSDK:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-token.html"><span>get</span><wbr></wbr><span><span>Token</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1863717557%2FFunctions%2F-2112088926"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AuthenticationSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-token.html"><span class="token function">getToken</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">source<span class="token operator">: </span><a href="../-auth-source/index.html">AuthSource</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-token.html"><span class="token function">getToken</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">source<span class="token operator">: </span><a href="../-auth-source/index.html">AuthSource</a><span class="token punctuation">, </span></span><span class="parameter ">fragmentActivity<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/FragmentActivity.html">FragmentActivity</a><span class="token punctuation">, </span></span><span class="parameter ">tokenCallback<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines/Job///PointingToDeclaration/">Job</span></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-token.html"><span class="token function">getToken</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">source<span class="token operator">: </span><a href="../-auth-source/index.html">AuthSource</a><span class="token punctuation">, </span></span><span class="parameter ">coroutineScope<span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines/CoroutineScope///PointingToDeclaration/">CoroutineScope</span><span class="token punctuation">, </span></span><span class="parameter ">tokenCallback<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines/Job///PointingToDeclaration/">Job</span></div><div class="brief "><p class="paragraph">This method will return a previously fetched token during the login process.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1737550370%2FFunctions%2F-2112088926" anchor-label="logout" id="-1737550370%2FFunctions%2F-2112088926" data-filterable-set=":AuthenticationSDK:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AuthenticationSDK:dokkaHtml/release" data-filterable-set=":AuthenticationSDK:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="logout.html"><span><span>logout</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1737550370%2FFunctions%2F-2112088926"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AuthenticationSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="logout.html"><span class="token function">logout</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="logout.html"><span class="token function">logout</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fragmentActivity<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/FragmentActivity.html">FragmentActivity</a><span class="token punctuation">, </span></span><span class="parameter ">logoutCallback<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines/Job///PointingToDeclaration/">Job</span></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="logout.html"><span class="token function">logout</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">coroutineScope<span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines/CoroutineScope///PointingToDeclaration/">CoroutineScope</span><span class="token punctuation">, </span></span><span class="parameter ">logoutCallback<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines/Job///PointingToDeclaration/">Job</span></div><div class="brief "><p class="paragraph">Logout from the current session.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="921888580%2FFunctions%2F-2112088926" anchor-label="newBuilder" id="921888580%2FFunctions%2F-2112088926" data-filterable-set=":AuthenticationSDK:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":AuthenticationSDK:dokkaHtml/release" data-filterable-set=":AuthenticationSDK:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="new-builder.html"><span>new</span><wbr></wbr><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="921888580%2FFunctions%2F-2112088926"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":AuthenticationSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="new-builder.html"><span class="token function">newBuilder</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-builder/index.html">TMAuthentication.Builder</a></div><div class="brief "><p class="paragraph">Create a new <a href="-builder/index.html">TMAuthentication.Builder</a> from the current AuthenticationSDK configuration.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
